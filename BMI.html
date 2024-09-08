@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="BMI-style.css">
+</head>
+<body>
+  <p class="title-of-calculator">BMI Calculator</p>
+  <div class="grid-sections">
+    <div class="bmi-calculator-grid">
+      <div class="up-section">
+        <button class="us-units js-us-units-button">US Units</button>
+        <button class="metric-units js-metric-units-button">Metric Units</button>
+      </div>
+      <div class="main-section">
+        <div class="paragraphs">
+          <p class="age-text js-age-text">Age</p>
+          <p class="gender-text">Gender</p>
+          <p class="height-text">Height</p>
+          <p class="weight-text">Weight</p>
+        </div>
+        <div>
+          <div>
+            <input class="age-input js-age-inputs" type="text" placeholder="years">
+            <div class="error-age js-error-age"></div>
+          </div>
+          <div class="gender-section">
+            <input class="male-input" id="Male" name="Gender" type="radio" value="Male">
+            <p class="male-text">
+              Male
+            </p>
+            <input class="female-input" id="Female" name="Gender" type="radio" value="Female">
+            <p class="female-text">
+              Female
+            </p>
+          </div>
+          
+          <div class="js-units units">
+            <div class="js-height-inputs us-height-inputs">
+              <div>
+                <input class="height-feet-input js-feet-inputs" type="text" placeholder="feet">
+                <div class="error-feet js-error-feet"></div>
+              </div>
+              <div>
+                <input class="height-inches-input js-inches-inputs" type="text" placeholder="inches">
+                <div class="error-inches js-error-inches"></div>
+              </div> 
+            </div>
+            <div>
+              <input class="js-weight weight-pounds-input js-pounds-inputs" type="text" placeholder="pounds">
+              <div class="error-pounds js-error-pounds"></div>
+            </div>
+          </div>
+          
+          <div class="down-buttons">
+            <button class="calculator-button js-calculator-button">Calculate</button>
+            <button class="clear-button js-clear-button">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resuls-grid">
+      <p class="result-text">Result</p>
+      <div class="results-texts">
+        <p class="bmi-result-text">BMI = <span class="js-bmi-result"></span></p>
+        <p class="classification-text">Classification: <span class="js-classification-result"></span></p>
+        <p class="healthy-bmi-range">Healthy BMI range: 18.5 kg/m² - 25 kg/m²</p>
+        <p class="bmi-prime-text">BMI Prime = <span class="js-BMI-prime-result"></span></p>
+        <p class="ponderal-index-text">Ponderal Index = <span class="js-ponderal-index-result"></span></p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <script src="BMI-script copy.js"></script>
+</body>
+</html>

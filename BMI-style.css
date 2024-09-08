@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.title-of-calculator {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(14, 91, 128);
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 14px;
+}
+
+
+.grid-sections {
+  display: grid;
+  grid-template-columns: 300px 350px;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+
+.up-section {
+  display: inline-block;
+}
+
+
+.us-units,
+.metric-units {
+  padding: 8px 12px;
+  border: 1px solid rgb(189, 189, 189);
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+
+.unclick-metric-units,
+.unclick-us-units {
+  padding: 9px 12px;
+  padding-bottom: 7.8px;
+  background-color: rgb(18, 116, 161);
+  color: white;
+  border: none;
+}
+
+.unclick-metric-units:hover,
+.unclick-us-units:hover {
+  padding: 8px 11px;
+  padding-bottom: 6.8px;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(18, 116, 161);
+  color: black;
+}
+
+
+p {
+  margin: 0;
+}
+
+.main-section {
+  width: 290px;
+  border: 1px solid rgb(189, 189, 189);
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: row;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.age-text,
+.gender-text,
+.height-text,
+.weight-text {
+  font-size: 13px;
+  margin-top: 13.5px;
+}
+
+
+.age-input {
+  margin-top: 8px;
+  height: 21px;
+  width: 90px;
+  padding-left: 6px;
+}
+
+
+.gender-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.male-text,
+.female-text {
+  display: inline-block;
+  margin-right: 18px;
+  margin-top: 7px;
+}
+
+.male-input,
+.female-input {
+  margin-left: 0;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+.gender-section p {
+  font-size: 14px;
+}
+
+.us-height-inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.height-feet-input,
+.height-inches-input {
+  margin-top: 7px;
+  margin-right: 4.2px;
+  height: 21px;
+  width: 77px;
+  padding-left: 6px;
+}
+
+.weight-pounds-input,
+.weight-kg-input {
+  margin-top: 5px;
+  height: 21px;
+  width: 170px;
+  padding-left: 6px;
+}
+
+.height-cm-input {
+  margin-top: 7px;
+  height: 21px;
+  width: 170px;
+  padding-left: 6px;
+}
+
+
+
+.down-buttons {
+  margin: 13px 0px;
+}
+
+.calculator-button {
+  height: 30px;
+  width: 110px;
+  margin-right: 3px;
+  background-color: rgb(240, 127, 35);
+  border: none;
+  border-radius: 3px;
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calculator-button:hover {
+  background-color: rgb(228, 112, 17);
+}
+
+.calculator-button:active {
+  opacity: 0.6;
+}
+
+.clear-button {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(20, 141, 189);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clear-button:hover {
+  background-color: rgb(14, 84, 112);
+}
+
+.clear-button:active {
+  opacity: 0.6;
+}
+
+
+.result-text {
+  background-color: rgb(19, 163, 19);
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 9px 14px;
+}
+
+.bmi-result-text,
+.classification-text,
+.healthy-bmi-range,
+.bmi-prime-text,
+.ponderal-index-text {
+  font-size: 14;
+  margin-bottom: 8px;
+  padding-left: 14px;
+}
+
+.bmi-result-text {
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.results-texts {
+  background-color: bisque;
+  height: 183px;
+}
+
+
+
+
+.error-age,
+.error-inches,
+.error-pounds,
+.error-feet,
+.error-cm,
+.error-kg {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 7px;
+}
+
+
+.error-age-text,
+.error-feet-text,
+.error-inches-text,
+.error-pounds-text,
+.error-cm-text,
+.error-kg-text {
+  font-size: 12px;
+  background-color: rgb(238, 195, 202);
+  border-radius: 2px;
+  padding: 3px 8px;
+  position: relative;
+}
+
+
+.error-age-text::after,
+.error-feet-text::after,
+.error-inches-text::after,
+.error-pounds-text::after,
+.error-cm-text::after,
+.error-kg-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid rgb(238, 195, 202);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: -6px;
+}
+
